@@ -57,6 +57,7 @@ export default class {
 
     setContent() {
         if (this.container === undefined) return;
+        if (this.this.container.classList.contains('loaded')) return;
 
         if (this.useBg) {
             this.container.style.backgroundImage = `url(${this.src})`;
